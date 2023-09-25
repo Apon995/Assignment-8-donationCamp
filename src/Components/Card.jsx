@@ -6,10 +6,10 @@ function Card({ items }) {
 
     const { id,title, category, category_color, card_bg, button_bg, picture } = items || {};
 
-    console.log(items)
+
     return (
         <>
-            <Link to={`/Home/${id}`}>
+            <Link to={`/Donation/${id}`}>
                 <div style={{ backgroundColor: card_bg }} className='rounded-md hover:cursor-pointer'>
                     <img src={picture} alt=".." className='h-[200px] rounded-md' />
                     <div className='px-2 py-4 space-y-2'>

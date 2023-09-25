@@ -19,17 +19,7 @@ function Header() {
         </div>
       </nav>
 
-      <div className="h-[70vh] w-full flex items-center justify-center flex-col gap-7 ">
-
-        <h3 className='text-[#0B0B0B] font-bold text-4xl'>I Grow By Helping People In Need !</h3>
-
-        <div className='flex  w-[35%] h-12 rounded-md '>
-          <input type="text" placeholder='search by category name ...' className='px-1 w-[80%] focus:border-[#0866FF] rounded-l-md outline-none border-[1px] border-[#adadad] font-semibold text-base text-[#0B0B0B]' />
-          <button className='bg-[#FF444A] text-white font-medium cursor-pointer text-base rounded-r-md w-[20%]'>Search</button>
-
-        </div>
-
-      </div>
+    
 
 
 
