@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "title": "Books for Underprivileged Children",
+    "category": "Education",
+    "category_color": "#3498db",
+    "card_bg": "#f0f0f0",
+    "button_bg": "#0052ff33",
+    "description": "Donate to provide books and educational materials for children in need. Help us give the gift of knowledge and open doors to a brighter future. Your $20 donation will make a significant impact on young lives.",
+    "price": 20,
+    "picture": "https://i.ibb.co/VLVbZVh/books-for-underprivate-kids.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Medical Supplies for Clinics",
+    "category": "Health",
+    "category_color": "#964B00",
+    "card_bg": "#f9fbe7",
+    "button_bg": "#f39c12",
+    "description": "Help us supply essential medical supplies to clinics in underserved areas. Your $50 donation will provide life-saving equipment and make healthcare accessible to those in need.",
+    "price": 50,
+    "picture": "https://i.ibb.co/7GTnYhk/Medical-supply.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Emergency Food Relief",
+    "category": "Food",
+    "category_color": "#FF444A",
+    "card_bg": "#fdebd0",
+    "button_bg": "#ff444a33",
+    "description": "Support our efforts to provide food to families facing hunger during crises. Your $30 donation will help us distribute food packages to those struggling to put food on the table.",
+    "price": 30,
+    "picture": "https://i.ibb.co/52SmTmS/Emergency-Food-Relief.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Winter Clothing Drive",
+    "category": "Clothing",
+    "category_color": "#000000",
+    "card_bg": "#f4ecf7",
+    "button_bg": "#8e44ad",
+    "description": "Donate to help us collect warm clothing for those in need during winter. Your $25 donation will provide coats, gloves, and hats to keep individuals warm in cold weather.",
+    "price": 25,
+    "picture": "https://i.ibb.co/NNjT7JH/Warm-Winter-Clothing-Drive.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Scholarships for College Students",
+    "category": "Education",
+    "category_color": "#3498db",
+    "card_bg": "#f0f0f0",
+    "button_bg": "#0052ff33",
+    "description": "Contribute to scholarships for deserving college students pursuing their dreams. Your $100 donation will help students access higher education and build a better future.",
+    "price": 100,
+    "picture": "https://i.ibb.co/yXKdKgB/scholership-for-students.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Mobile Health Clinics",
+    "category": "Health",
+    "category_color": "#964B00",
+    "card_bg": "#f9fbe7",
+    "button_bg": "#f39c12",
+    "description": "Support our mobile health clinics to reach remote areas with medical care. Your $75 donation will fund medical outreach and save lives in underserved communities.",
+    "price": 75,
+    "picture": "https://i.ibb.co/HrsJjZ0/Mobile-health-clinic.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Food for Orphaned Children",
+    "category": "Food",
+    "category_color": "#FF444A",
+    "card_bg": "#fdebd0",
+    "button_bg": "#ff444a33",
+    "description": "Provide nutritious meals to orphaned children in loving homes. Your $40 donation will ensure these children grow up healthy and happy.",
+    "price": 40,
+    "picture": "https://i.ibb.co/M9vf4BZ/Food-for-Orphaned-Children.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Winter Coats for Homeless",
+    "category": "Clothing",
+    "category_color": "#000000",
+    "card_bg": "#f4ecf7",
+    "button_bg": "#8e44ad",
+    "description": "Donate warm winter coats to help the homeless stay warm during winter. Your $35 donation will provide comfort and protection from the cold.",
+    "price": 35,
+    "picture": "https://i.ibb.co/xHJybgq/Winter-Coats-for-Homeless.jpg"
+  },
+  {
+    "id": 9,
+    "title": "School Supplies for Rural Kids",
+    "category": "Education",
+    "category_color": "#3498db",
+    "card_bg": "#f0f0f0",
+    "button_bg": "#0052ff33",
+    "description": "Ensure that children in rural areas have access to essential school supplies. Your $15 donation will support their education and future success.",
+    "price": 15,
+    "picture": "https://i.ibb.co/T8TvLZP/school-supplies.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Maternal Health Programs",
+    "category": "Health",
+    "category_color": "#964B00",
+    "card_bg": "#f9fbe7",
+    "button_bg": "#f39c12",
+    "description": "Support programs that improve maternal health and reduce maternal mortality. Your $60 donation will save lives and promote healthy families.",
+    "price": 60,
+    "picture": "https://i.ibb.co/bLMPk90/Maternal-Health-Programs.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Food Bank Donations",
+    "category": "Food",
+    "category_color": "#FF444A",
+    "card_bg": "#fdebd0",
+    "button_bg": "#ff444a33",
+    "description": "Contribute to food banks to feed families facing food insecurity. Your $20 donation will provide meals to those struggling to make ends meet.",
+    "price": 20,
+    "picture": "https://i.ibb.co/GWjxTk0/Food-Bank-Donations.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Clothing Vouchers for Needy Families",
+    "category": "Clothing",
+    "category_color": "#000000",
+    "card_bg": "#f4ecf7",
+    "button_bg": "#8e44ad",
+    "description": "Provide clothing vouchers to families in need to choose their clothing. Your $30 donation will empower individuals to select clothing that suits their preferences and needs.",
+    "price": 30,
+    "picture": "https://i.ibb.co/kKPckm0/Clothing-Vouchers-for-Needy-Families.jpg"
+  }
+]
