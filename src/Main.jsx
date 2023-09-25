@@ -6,8 +6,8 @@ import ErrorPage from "./ErrorPage";
 import Home from "./Components/Home";
 import Donation from "./Components/Donation";
 import Statistics from "./Components/Statistics";
-import "../src/Main.css";
 import Decription from "./Components/Decription";
+import "../src/Main.css";
 
 
 
