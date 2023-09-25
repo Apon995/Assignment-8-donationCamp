@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Card from './Card';
 
 
@@ -8,11 +10,8 @@ function Home() {
   const [Catagory, setCategory] = useState([]);
   const [SearchbyCategory, SetSearchbyCategory] = useState();
 
-  const handleOnchange = (e) => { 
-    SetSearchbyCategory(e.target.value);
-    
-    
-
+  const handleOnchange = (e) => {
+    SetSearchbyCategory(e.target.value)
   };
 
 
@@ -23,33 +22,39 @@ function Home() {
 
 
   const handleSearch = () => {
-    
-    if(SearchbyCategory == "All" || SearchbyCategory == "ALL" || SearchbyCategory == "all"){
+
+    if (SearchbyCategory == "All" || SearchbyCategory == "ALL" || SearchbyCategory == "all") {
       setCategory(Data)
 
     }
     else if (SearchbyCategory == "education" || SearchbyCategory == "Education" || SearchbyCategory == "EDUCATION") {
-      let education = Catagory.filter((data)=> data.category == "Education");
-     setCategory(education)
+      let education = Catagory.filter((data) => data.category == "Education");
+      setCategory(education)
     }
     else if (SearchbyCategory == "health" || SearchbyCategory == "Health" || SearchbyCategory == "HEALTH") {
-      let health = Catagory.filter((data)=> data.category == "Health");
+      let health = Catagory.filter((data) => data.category == "Health");
       setCategory(health)
     }
     else if (SearchbyCategory == "food" || SearchbyCategory == "Food" || SearchbyCategory == "FOOD") {
-      let food = Catagory.filter((data)=> data.category == "Food");
+      let food = Catagory.filter((data) => data.category == "Food");
       setCategory(food)
     }
-    else if(SearchbyCategory == "cloth" || SearchbyCategory == "clothing" || SearchbyCategory == "Cloth" || SearchbyCategory == "Clothing"){
-      let cloth = Catagory.filter((data)=> data.category == "Clothing");
+    else if (SearchbyCategory == "cloth" || SearchbyCategory == "clothing" || SearchbyCategory == "Cloth" || SearchbyCategory == "Clothing") {
+      let cloth = Catagory.filter((data) => data.category == "Clothing");
       setCategory(cloth)
     }
-    else{
-      console.log('no match category')
+    else {
+      toast.warn(`not found this category : ${SearchbyCategory}`, {
+        position: "top-center",
+        hideProgressBar: true,
+        autoClose: 2000
+      })
     }
-   
 
-    
+
+
+    document.getElementById('search-bar').value = ""
+
   }
 
 
@@ -64,7 +69,7 @@ function Home() {
         <h3 className='text-[#0B0B0B] font-bold text-4xl'>I Grow By Helping People In Need !</h3>
 
         <div className='flex  w-[35%] h-12 rounded-md '>
-          <input onChange={handleOnchange} type="text" placeholder='search by category name ...' className='px-1 w-[80%] focus:border-[#0866FF] rounded-l-md outline-none border-[1px] border-[#adadad] font-semibold text-base text-[#0B0B0B]' />
+          <input onChange={handleOnchange} id='search-bar' type="text" placeholder='search by category name ...' className='px-1 w-[80%] focus:border-[#0866FF] rounded-l-md outline-none border-[1px] border-[#adadad] font-semibold text-base text-[#0B0B0B]' />
           <button onClick={handleSearch} className='bg-[#FF444A] text-white font-medium cursor-pointer text-base rounded-r-md w-[20%]'>Search</button>
 
         </div>
@@ -78,7 +83,7 @@ function Home() {
       </div>
 
 
-
+      <ToastContainer />
     </>
   )
 }

@@ -1,0 +1,20 @@
+.description-box > div {
+    position:  relative;
+}
+
+.description-box > div > .overly{
+    
+    position: absolute;
+    content: "";
+    border-radius:6px;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    height: 10%;
+    background-color:#0b0b0b80;
+
+}
+.description-box > div > img {
+    display: block;
+   
+}

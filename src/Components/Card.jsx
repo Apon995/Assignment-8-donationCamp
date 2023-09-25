@@ -9,7 +9,7 @@ function Card({ items }) {
 
     return (
         <>
-            <Link to={`/Donation/${id}`}>
+            <Link to={`/Card/${id}`}>
                 <div style={{ backgroundColor: card_bg }} className='rounded-md hover:cursor-pointer'>
                     <img src={picture} alt=".." className='h-[200px] rounded-md' />
                     <div className='px-2 py-4 space-y-2'>
