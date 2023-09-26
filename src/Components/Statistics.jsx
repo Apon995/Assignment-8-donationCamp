@@ -54,14 +54,14 @@ function Statistics() {
       <div className="h-[80vh] w-full flex items-center justify-center flex-col gap-5">
         <div>
           
-          <PieChart width={500} height={400}>
+          <PieChart width={320} height={400}>
             <Pie
               dataKey="value"
               isAnimationActive={true}
               data={donationData}
               cx="50%"
               cy="50%"
-              outerRadius={130}
+              outerRadius={120}
               fill="#8884d8"
               labelLine = {true}
               label
