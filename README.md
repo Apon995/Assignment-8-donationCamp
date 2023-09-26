@@ -1,8 +1,7 @@
-# React + Vite
+3 feature This project .
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+• 1no feature : This project create by React jsx and css framework is tailwindcss , it is very simple and beautiful project .
 
-Currently, two official plugins are available:
+• 2no feature : This project made for needed person who need your help and donation. This is a one of best project . 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+• 3rd feature : This project is very organized and functional and easy to code.

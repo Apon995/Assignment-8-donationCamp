@@ -28,16 +28,18 @@ function Statistics() {
 
 
 
-    const yourdonate = donationpricearray.reduce((total, i) => total + i, 0.0);
+    const yourdonate = donationpricearray.reduce((total, i) => total + i, 0.0)
     const totaldonate = Data.reduce((total, item) => total + item.price, 0);
 
-    let yourDonationPercentage = ((yourdonate / totaldonate) * 100)
-    let totalDonationPercentage = (100 - yourDonationPercentage)
+    let yourDonationPercentage = parseInt(((yourdonate / totaldonate) * 100))
+    let totalDonationPercentage = parseInt((100 - yourDonationPercentage))
 
     const pieData = [
       { name: 'Your Donation', value: yourDonationPercentage, fill: "#00C49F" },
       { name: 'Total Donation', value: totalDonationPercentage, fill: "#FF444A" },
     ];
+
+    console.log(yourDonationPercentage)
 
 
 
@@ -52,7 +54,7 @@ function Statistics() {
       <div className="h-[80vh] w-full flex items-center justify-center flex-col gap-5">
         <div>
           
-          <PieChart width={300} height={400}>
+          <PieChart width={500} height={400}>
             <Pie
               dataKey="value"
               isAnimationActive={true}

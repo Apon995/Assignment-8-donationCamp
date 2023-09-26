@@ -4,7 +4,7 @@ import {AiOutlineArrowLeft} from 'react-icons/ai'
 function ErrorPage() {
   return (
     <>
-      <div className='h-screen flex items-center justify-center flex-col space-y-4 '>
+      <div className='h-[90vh] flex items-center justify-center flex-col space-y-4 text-center px-4 '>
         <h1 className='text-5xl font-semibold text-black'>I Have bad
           news for you &#128543;</h1>
 
@@ -21,4 +21,4 @@ function ErrorPage() {
   )
 }
 
-export default ErrorPage
+export default ErrorPage;
