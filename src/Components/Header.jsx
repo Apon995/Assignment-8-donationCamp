@@ -19,7 +19,7 @@ function Header() {
       document.getElementById('navbar').classList.add('top-[-35%]')
 
     }
-    console.log('navbar cliked')
+
   }
 
   return (

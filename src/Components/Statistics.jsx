@@ -1,6 +1,6 @@
 import { React, useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { Pie, PieChart, Tooltip} from 'recharts';
+import { Pie, PieChart, Tooltip } from 'recharts';
 import { getDataFromLs } from '../Utilities/saveData';
 
 
@@ -31,29 +31,29 @@ function Statistics() {
     const yourdonate = donationpricearray.reduce((total, i) => total + i, 0.0)
     const totaldonate = Data.reduce((total, item) => total + item.price, 0);
 
-    let yourDonationPercentage = parseInt(((yourdonate / totaldonate) * 100))
-    let totalDonationPercentage = parseInt((100 - yourDonationPercentage))
-
-    const pieData = [
-      { name: 'Your Donation', value: yourDonationPercentage, fill: "#00C49F" },
-      { name: 'Total Donation', value: totalDonationPercentage, fill: "#FF444A" },
-    ];
-
-    console.log(yourDonationPercentage)
-
-
-
-    setDonationData(pieData);
+    let yourDonationPercentage = (yourdonate / totaldonate) * 100;
+    let totalDonationPercentage = (100 - yourDonationPercentage)
     setTotalDonation(totalDonationPercentage.toFixed(2))
     setYourDonation(yourDonationPercentage.toFixed(2))
+
+
   }, []);
 
-  
+  useEffect(() => {
+    const pieData = [
+      { name: 'Your Donation', value: parseFloat(yourDonation), fill: "#00C49F" },
+      { name: 'Total Donation', value: parseFloat(TotalDonation), fill: "#FF444A" },
+    ];
+    setDonationData(pieData);
+
+  }, [yourDonation])
+
+
   return (
     <>
       <div className="h-[80vh] w-full flex items-center justify-center flex-col gap-5">
         <div>
-          
+
           <PieChart width={320} height={400}>
             <Pie
               dataKey="value"
@@ -61,22 +61,22 @@ function Statistics() {
               data={donationData}
               cx="50%"
               cy="50%"
-              outerRadius={120}
+              outerRadius={105}
               fill="#8884d8"
-              labelLine = {true}
+              labelLine={true}
               label
-              
+
 
             />
-            
+
             <Tooltip />
 
           </PieChart>
 
 
 
-          
-         
+
+
 
 
 
