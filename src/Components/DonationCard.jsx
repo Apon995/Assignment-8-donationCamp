@@ -9,8 +9,8 @@ function DonationCard({Donate}) {
    
     return (
         <>
-            <div className='bg-[#0052ff26] flex gap-2 rounded-md'>
-                <img src={picture} alt="" className='w-[250px] rounded-md' />
+            <div className='bg-[#0052ff26] flex gap-2 rounded-md lg:flex-row md:flex-col flex-col'>
+                <img src={picture} alt=".." className='lg:w-[250px] md:w-full rounded-md md:h-[220px] lg:h-auto' />
 
                 <div className='py-5 space-y-2 px-2'>
                     <p style={{ backgroundColor: "#0052ff33", color: category_color || 'black' }} className=' w-fit px-4  py-2 rounded-md text-base font-medium'>{category || ''}</p>

@@ -5,10 +5,10 @@ import { Outlet } from "react-router-dom";
 function App() {
   return (
     <>
-      <header className="px-[5%]">
+      <header className="md:px-[5%] px-[3%]">
         <Header />
       </header>
-      <main className="px-[5%]">
+      <main className="md:px-[5%] px-[3%]">
         <Outlet />
       </main>
     </>

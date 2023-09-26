@@ -1,6 +1,6 @@
 import { React, useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { Pie, PieChart, Tooltip } from 'recharts';
+import { Pie, PieChart, Tooltip} from 'recharts';
 import { getDataFromLs } from '../Utilities/saveData';
 
 
@@ -45,11 +45,14 @@ function Statistics() {
     setTotalDonation(totalDonationPercentage.toFixed(2))
     setYourDonation(yourDonationPercentage.toFixed(2))
   }, []);
+
+  
   return (
     <>
-      <div className=" w-full flex items-center justify-center flex-col gap-5">
+      <div className="h-[80vh] w-full flex items-center justify-center flex-col gap-5">
         <div>
-          <PieChart width={700} height={400}>
+          
+          <PieChart width={300} height={400}>
             <Pie
               dataKey="value"
               isAnimationActive={true}
@@ -58,20 +61,27 @@ function Statistics() {
               cy="50%"
               outerRadius={130}
               fill="#8884d8"
+              labelLine = {true}
               label
+              
+
             />
+            
             <Tooltip />
 
           </PieChart>
 
 
 
+          
+         
+
 
 
         </div>
-        <div className='flex items-center gap-12 text-black text-xl font-medium'>
-          <h1 className='text-[#00C49F]'>Your Donation : {yourDonation}%  </h1>
-          <h2 className='text-[#FF444A]' >Total Donaiton : {TotalDonation}%</h2>
+        <div className='flex items-center md:gap-12 gap-2 text-black md:text-xl text-sm font-medium'>
+          <h1 className='text-[#00C49F] text-center'>Your Donation : {yourDonation}%  </h1>
+          <h2 className='text-[#FF444A] text-center' >Total Donaiton : {TotalDonation}%</h2>
         </div>
 
       </div>

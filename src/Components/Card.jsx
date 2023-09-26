@@ -11,7 +11,7 @@ function Card({ items }) {
         <>
             <Link to={`/Card/${id}`}>
                 <div style={{ backgroundColor: card_bg }} className='rounded-md hover:cursor-pointer'>
-                    <img src={picture} alt=".." className='h-[200px] rounded-md' />
+                    <img src={picture} alt=".." className='h-[200px] w-full rounded-md' />
                     <div className='px-2 py-4 space-y-2'>
                         <h1 style={{ backgroundColor: button_bg || "#0052ff33", color: category_color || "#0052ff33" }} className=' w-fit px-4  py-2 rounded-md text-base font-medium'>{category || ''}</h1>
 

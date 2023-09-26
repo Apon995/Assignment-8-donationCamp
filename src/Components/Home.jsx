@@ -22,10 +22,12 @@ function Home() {
 
 
   const handleSearch = () => {
+    if (SearchbyCategory == undefined || null) {
+      return;
+    }
 
     if (SearchbyCategory == "All" || SearchbyCategory == "ALL" || SearchbyCategory == "all") {
-      setCategory(Data)
-
+      setCategory(Data);
     }
     else if (SearchbyCategory == "education" || SearchbyCategory == "Education" || SearchbyCategory == "EDUCATION") {
       let education = Catagory.filter((data) => data.category == "Education");
@@ -53,6 +55,7 @@ function Home() {
 
 
 
+
     document.getElementById('search-bar').value = ""
 
   }
@@ -64,18 +67,18 @@ function Home() {
 
   return (
     <>
-      <div className="h-[70vh] w-full flex items-center justify-center flex-col gap-7  bg-[url(https://i.ibb.co/wzrY0kn/banner-img.jpg)] bg-no-repeat bg-cover bg-[#fffffff2]  bg-blend-overlay rounded-md">
+      <div className="md:min-h-[70vh] min-h-[45vh] w-full flex items-center justify-center flex-col gap-7  bg-[url(https://i.ibb.co/wzrY0kn/banner-img.jpg)] bg-no-repeat bg-cover bg-center bg-[#fffffff2]  bg-blend-overlay rounded-md">
 
-        <h3 className='text-[#0B0B0B] font-bold text-4xl'>I Grow By Helping People In Need !</h3>
+        <h3 className='text-[#0B0B0B] font-bold text-[1.4rem] md:text-4xl text-center'>I Grow By Helping People In Need !</h3>
 
-        <div className='flex  w-[35%] h-12 rounded-md '>
-          <input onChange={handleOnchange} id='search-bar' type="text" placeholder='search by category name ...' className='px-1 w-[80%] focus:border-[#0866FF] rounded-l-md outline-none border-[1px] border-[#adadad] font-semibold text-base text-[#0B0B0B]' />
-          <button onClick={handleSearch} className='bg-[#FF444A] text-white font-medium cursor-pointer text-base rounded-r-md w-[20%]'>Search</button>
+        <div className='flex  lg:w-[35%] md:w-[55%] w-[90%] h-12 rounded-md '>
+          <input onChange={handleOnchange} id='search-bar' type="text" placeholder='search by category name ...' className='px-1 md:w-[80%] w-[75%] focus:border-[#0866FF] rounded-l-md outline-none border-[1px] border-[#adadad] font-semibold text-sm md:text-base text-[#0B0B0B]' />
+          <button onClick={handleSearch} className='bg-[#FF444A] text-white font-medium cursor-pointer text-sm md:text-base rounded-r-md md:w-[20%] w-[25%]'>Search</button>
 
         </div>
 
       </div>
-      <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 py-10'>
+      <div className='grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 py-10'>
         {
           Catagory?.map((items, index) => <Card key={index} items={items} />)
         }
