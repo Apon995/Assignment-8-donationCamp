@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLoaderData, useParams } from "react-router-dom";
+import { SaveData } from "../Utilities/saveData";
+import { AiOutlineArrowLeft } from "react-icons/ai"
 import "../Components/Styles/Description.css";
+import Swal from "sweetalert2";
+
 
 function Decription() {
     const [Description, setDescription] = useState({});
@@ -13,26 +17,32 @@ function Decription() {
     }, [id]);
 
 
-    const {title, description, price, picture,category_color } = Description || {};
+    const { title, description, price, picture, category_color } = Description || {};
 
 
-    const HandleDonate =(id)=>{
-        console.log(id)
-       
+    const HandleDonate = (id) => {
+        Swal.fire({
+            icon: 'success',
+            title: 'Donation Successfully !',
+            showConfirmButton: true,
+            timer: 3000
+        })
+        SaveData(id)
     }
 
     return (
         <>
-        <Link to="/"> Back to home</Link>
-            <div className="description-box py-5 w-full  space-y-5 ">
-                <div className="block ">
+
+            <Link to="/" className="text-base font-semibold text-black cursor-pointer pt-3 inline-flex items-center"> <AiOutlineArrowLeft className="text-xl font-bold text-black" /> Back to home</Link>
+            <div className="description-box py-2 w-full  space-y-5 ">
+                <div className="block">
                     <img
                         src={picture}
                         alt="..."
-                        className=" w-full min-h-[50vh] rounded-md"
+                        className=" w-full min-h-[50vh] rounded-md bg-center"
                     />
                     <div className="overly px-5 pt-2">
-                        <button onClick={()=>HandleDonate(id)} style={{backgroundColor : category_color || "#FF444A"}} className="px-4 py-2 text-white text-base font-medium rounded-md cursor-pointer hover:opacity-80">
+                        <button onClick={() => HandleDonate(id)} style={{ backgroundColor: category_color || "#FF444A" }} className="px-4 py-2 text-white text-base font-medium rounded-md cursor-pointer hover:opacity-80">
                             Donate ${price}
                         </button>
                     </div>

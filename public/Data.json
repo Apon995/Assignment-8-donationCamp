@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "Books for Underprivileged Children",
+    "title": "Books for Children",
     "category": "Education",
     "category_color": "#3498db",
     "card_bg": "#f0f0f0",
@@ -45,7 +45,7 @@
   },
   {
     "id": 5,
-    "title": "Scholarships for College Students",
+    "title": "Scholarships for Students",
     "category": "Education",
     "category_color": "#3498db",
     "card_bg": "#f0f0f0",
@@ -89,7 +89,7 @@
   },
   {
     "id": 9,
-    "title": "School Supplies for Rural Kids",
+    "title": "School Supplies for Kids",
     "category": "Education",
     "category_color": "#3498db",
     "card_bg": "#f0f0f0",
